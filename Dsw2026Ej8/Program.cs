@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var helper = new ProductHelper();
+            Console.WriteLine(helper.ObtenerEtiquetaProducto(1, "Producto A", 19.99m));
         }
     }
 }
