@@ -4,8 +4,12 @@
     {
         static void Main(string[] args)
         {
-            var helper = new ProductHelper();
-            Console.WriteLine(helper.ObtenerEtiquetaProducto(1, "Producto A", 19.99m));
+            /*var helper = new ProductHelper();
+            Console.WriteLine(helper.ObtenerEtiquetaProducto(1, "Producto A", 19.99m));*/
+
+            var p = new Problema2();
+            Console.WriteLine(p.CrearResumenVenta(12345, "Producto A", 3, 19.99m));
+
         }
     }
 }
