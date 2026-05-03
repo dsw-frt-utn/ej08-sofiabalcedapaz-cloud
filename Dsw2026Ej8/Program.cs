@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            /*var helper = new ProductHelper();
-            Console.WriteLine(helper.ObtenerEtiquetaProducto(1, "Producto A", 19.99m));*/
+            var helper = new ProductHelper();
+            Console.WriteLine(helper.ObtenerEtiquetaProducto(1, "Producto A", 19.99m));
 
             var p = new Problema2();
             Console.WriteLine(p.CrearResumenVenta(12345, "Producto A", 3, 19.99m));
@@ -15,6 +15,14 @@
 
             var p4 = new Problema4();
             Console.WriteLine(p4.CalcularPromedio(85, 90, null));
+
+            var p5 = new Problema5();
+
+            Sale s1 = new RetailSale(1000);
+            Sale s2 = new WholesaleSale(1000);
+
+            Console.WriteLine(p5.ObtenerImporteFinal(s1)); // 1000
+            Console.WriteLine(p5.ObtenerImporteFinal(s2)); // 900
 
         }
     }
