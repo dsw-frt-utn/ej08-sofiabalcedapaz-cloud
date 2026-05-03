@@ -13,6 +13,9 @@
             var p3 = new Problema3();
             Console.WriteLine(p3.CompararCopias(100, new Product("Producto A")));
 
+            var p4 = new Problema4();
+            Console.WriteLine(p4.CalcularPromedio(85, 90, null));
+
         }
     }
 }
