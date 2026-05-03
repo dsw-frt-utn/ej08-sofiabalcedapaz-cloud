@@ -10,6 +10,9 @@
             var p = new Problema2();
             Console.WriteLine(p.CrearResumenVenta(12345, "Producto A", 3, 19.99m));
 
+            var p3 = new Problema3();
+            Console.WriteLine(p3.CompararCopias(100, new Product("Producto A")));
+
         }
     }
 }
