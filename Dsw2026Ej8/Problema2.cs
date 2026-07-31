@@ -20,7 +20,7 @@ namespace Dsw2026Ej8
                 Total = total,
             };
             return $"{venta.Code} - {venta.Description} - {venta.Total}";
-    }
+        }
     }
 }
 
